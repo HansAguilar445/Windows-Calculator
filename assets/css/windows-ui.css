@@ -1,0 +1,271 @@
+@import 'base.css';
+
+main {
+	height: calc(100vh - 40px);
+	width: 100%;
+}
+
+main .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+body {
+    position: relative;
+    background-image: url(../img/default-windows.jpg); /*Trying to replicate the Windows 10 UI, can't access much of the built-in files so I had
+    to download the default Windows 10 wallpaper. Source: https://wallpapercave.com/w/wp5493583*/
+    background-color: #00b4fb;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fake Windows Calculator UI */
+#fake-windows-ui{
+	padding: 18px 0 18px 18px;
+	width: 299px;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+	margin-right: 1px;
+	border-top: 1px solid #000;
+}
+
+#calculator {
+	padding: 18px;
+}
+
+#fake-windows-ui h6, #fake-windows-ui ul li {
+	display: inline;
+	font-weight: 400;
+	user-select: none;
+}
+
+#fake-windows-ui h6 {
+	font-size: 10px;
+}
+
+#fake-windows-ui ul li {
+	cursor: pointer;
+	margin: 0;
+	padding: 8px 18px;
+	font-size: 16px;
+}
+
+#fake-windows-ui ul li:hover {
+	background-color: #c9c9c9;
+}
+
+#fake-windows-ui ul li#fake-close:hover {
+	background-color: #e81123;
+	color: #fff;
+	border-right: 1px solid #000;
+}
+
+#fake-windows-ui ul {
+	list-style: none;
+	font-size: 0;
+}
+
+section {
+	width: 300px;
+    height: 400px;
+    background-color: #f0f0f0e1;
+	border: 1px solid #000;
+	margin: 0 auto;
+}
+
+section h2 {
+	font-size: 20px;
+	font-weight: 700;
+	user-select: none;
+}
+
+section h3 {
+	font-weight: 700px;
+	font-size: 30px;
+	text-align: right;
+	user-select: none;
+}
+
+section p {
+	color: #7e7e7e;
+	font-size: 16px;
+	text-align: right;
+	user-select: none;
+}
+
+#calc-input {
+	width: 262px;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 60px);
+	grid-gap: 5px;
+	grid-template-rows: repeat(5, 40px);
+}
+
+input[type="button"] {
+	background-color: #FCFCFC;
+}
+
+input[type="button"]:hover {
+	background-color: #c2b8b4;
+}
+
+#equals {
+	background-color: #8ec0e7;
+}
+
+#equals:hover {
+	background-color: #3b8fd0;
+}
+
+input[type="button"].operation, input[type="button"]#pi, input[type="button"]#clear, input[type="button"]#clearI {
+	background-color: #d9d8d9;
+}
+
+input[type="button"].operation:hover, input[type="button"]#pi:hover, input[type="button"]#clear:hover, input[type="button"]#clearI:hover {
+	background-color: #b5b5b5;
+}
+
+/* Windows Taskbar*/
+
+#replica-buttons i {
+	font-size: 24px;
+	line-height: 40px;
+	padding: 0 15px;
+	color: #ffffff;
+
+}
+
+#windows:hover {
+	color: #429de2;
+	transition: none;
+}
+
+#replica-buttons figure {
+	height: 40px;
+	width: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5px;
+	transition: none;
+}
+
+#replica-buttons figure img {
+	height: 25px;
+	width: auto;
+}
+
+#replica-buttons figure img#file-ex {
+	height: 20px;
+	width: auto;
+}
+
+#replica-buttons figure:hover {
+	background-color: #323130;
+}
+
+#calc {
+	background-color: #494949;
+	border-bottom: 3px solid #76b9ed;
+}
+
+#calc:hover {
+	background-color: #5f5c5c;
+}
+
+#replica-buttons form {
+	height: 40px;
+}
+
+#replica-buttons form input {
+	height: 40px;
+	width: 240px;
+	padding: 15px;
+	padding-left: 30px;
+	border: 2px solid #7e7e7e;
+	background-image: url(../img/search-13-64.png);
+	background-position: 4% 50%;
+	background-repeat: no-repeat;
+	background-size: 16px;
+}
+
+#action i {
+	line-height: 40px;
+	padding: 0 5px;
+	color: #ffffff;
+}
+
+#action figure {
+	height: 40px;
+	width: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+#action figure img#battery {
+	width: 17px;
+	height: auto;
+	margin: 0 auto;
+	user-select: none;
+}
+
+#action figure img#wifi {
+	width: 16px;
+	height: auto;
+	margin: 0 auto;
+	user-select: none;
+}
+
+#action i:hover, #action figure:hover, #action p:hover, #action div:hover {
+	background-color: #323130;
+}
+
+#action p {
+	color: #fff;
+	font-weight: 400;
+	user-select: none;
+}
+
+#action p#language {
+	font-size: 16px;
+	padding: 0 7px;
+	line-height: 40px;
+	
+}
+
+#action div#time {
+	width: 71px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#time p {
+	text-align: center;
+	font-size: 12px;
+}
+
+#hide {
+	height: 40px;
+	width: 5px;
+	border-left: 1px solid #767776;
+}
+
+i#notif {
+	padding: 0 15px;
+	margin-right: 5px;
+}

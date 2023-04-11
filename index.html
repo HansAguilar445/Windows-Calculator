@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Windows Recreation</title>
+	<link rel="shortcut icon" href="assets/img/favicon.png?v=2" type="image/x-icon" />
+	<link rel="stylesheet" href="assets/css/windows-ui.css" media="all" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+	<script src="assets/js/calculate.js" defer></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<main>
+			<div class="container">
+				<section>
+					<div id="fake-windows-ui">
+						<h6>Calculator</h6>
+						<ul>
+							<li>&minus;</li>
+							<li>&square;</li>
+							<li id="fake-close">&times;</li>
+						</ul>
+					</div>
+					<div id="calculator">
+						<h2>Standard</h2>
+						<p id="input">&nbsp;</p>
+						<h3 id="output">0</h3>
+						<form id="calc-input" action="#">
+							<input type="button" class="number" id="pi" value="Pi">
+							<input type="button" id="clear" value="C">
+							<input type="button" id="clearI" value="CE">
+							<input type="button" class="operation" value="^">
+							<input type="button" class="number" value="7">
+							<input type="button" class="number" value="8">
+							<input type="button" class="number" value="9">
+							<input type="button" class="operation" value="/">
+							<input type="button" class="number" value="4">
+							<input type="button" class="number" value="5">
+							<input type="button" class="number" value="6">
+							<input type="button" class="operation" value="*">
+							<input type="button" class="number" value="1">
+							<input type="button" class="number" value="2">
+							<input type="button" class="number" value="3">
+							<input type="button" class="operation" value="+">
+							<input type="button" class="number" value="0">
+							<input type="button" class="number" value=".">
+							<input type="button" id="equals" value="=">
+							<input type="button" class="operation" value="-">
+						</form>
+					</div>
+				</section>
+			</div>
+		</main>
+		<noscript>
+			<p>This page requires a JavaScript-enabled browser.</p>
+		</noscript>
+		<footer>
+			<div id="taskbar">
+				<div id="replica-buttons">
+					<i class="fab fa-windows" id="windows"></i>
+					<form action="#">
+						<input type="text" id="fake-search" placeholder="Type here to search">
+					</form>
+					<figure>
+						<img id="chr" src="assets/img/Google_Chrome_icon.svg">
+					</figure>
+					<figure>
+						<img id="file-ex" src="assets/img/Windows_Explorer_Icon.svg">
+					</figure>
+					<figure>
+						<img id="store" src="assets/img/Microsoft_Store_app_icon.png">
+					</figure>
+					<figure id="calc">
+						<img src="assets/img/Windows_Calculator_icon.png">
+					</figure>
+				</div>
+				<div id="action">
+					<i class="fas fa-chevron-up"></i>
+					<figure>
+						<img id="battery" src="assets/img/battery.png">						
+					</figure>
+					<figure>
+						<img id="wifi" src="assets/img/wifi-64.png">						
+					</figure>
+					<i class="fas fa-volume-up"></i>
+					<p id="language">ENG</p>
+					<div id="time">
+						<p>12:00 am</p>
+						<p>2002-1-1</p>
+					</div>
+					<i class="far fa-comment-alt" id="notif"></i>
+					<div id="hide"></div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
