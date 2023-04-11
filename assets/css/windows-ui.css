@@ -90,7 +90,7 @@ section h2 {
 
 section h3 {
 	font-weight: 700px;
-	font-size: 30px;
+	font-size: 26px;
 	text-align: right;
 	user-select: none;
 }
@@ -242,11 +242,11 @@ input[type="button"].operation:hover, input[type="button"]#pi:hover, input[type=
 	font-size: 16px;
 	padding: 0 7px;
 	line-height: 40px;
-	
+
 }
 
 #action div#time {
-	width: 71px;
+	width: 80px;
 	height: 40px;
 	display: flex;
 	flex-direction: column;

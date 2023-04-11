@@ -1,0 +1,3 @@
+# [Access the project here!]()
+## Windows Calculator
+This was a project I worked on last year for the JavaScript Basics course at MITT. We were tasked with creating a web-based calculator and style it as such. I decided to theme mine around Windows 10. To this end, I replicated as much as I could of Windows 10's style, from the way the calculator looked to the taskbar's look, making use of the FontAwesome icon library to make the taskbar look as accurate as possible. In addition, I added some code to make the clock in the bottom right corner work.
